@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:app4"
+             x:Class="app4.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Label Text="CALCULADORA TIFFIS" TextColor="LightSalmon"></Label>
+            <Entry Placeholder="" IsEnabled="False" x:Name="rs"/>
+            <Button Text="Limpar" Clicked="lp_Clicked" BackgroundColor="LightSkyBlue"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                <Button Text="7" HorizontalOptions="FillAndExpand" Clicked="siete_Clicked" BackgroundColor="LightSkyBlue"/>
+                <Button Text="8" HorizontalOptions="FillAndExpand" Clicked="ocho_Clicked" BackgroundColor="LightPink"/>
+                <Button Text="9" HorizontalOptions="FillAndExpand" Clicked="nueve_Clicked" BackgroundColor="LightSkyBlue"/>
+                <Button Text="*" HorizontalOptions="FillAndExpand" Clicked="mul_Clicked" BackgroundColor="LightSalmon"/>
+                
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="4" HorizontalOptions="FillAndExpand" Clicked="cuatro_Clicked" BackgroundColor="LightSkyBlue"/>
+                <Button Text="5" HorizontalOptions="FillAndExpand" Clicked="cinco_Clicked" BackgroundColor="LightPink"/>
+                <Button Text="6" HorizontalOptions="FillAndExpand" Clicked="seis_Clicked" BackgroundColor="LightSkyBlue"/>
+                <Button Text="-" HorizontalOptions="FillAndExpand" Clicked="resta_Clicked" BackgroundColor="LightSalmon"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="1" HorizontalOptions="FillAndExpand" Clicked="uno_Clicked" BackgroundColor="LightSkyBlue" />
+                <Button Text="2" HorizontalOptions="FillAndExpand" Clicked="dos_Clicked" BackgroundColor="LightPink"/>
+                <Button Text="3" HorizontalOptions="FillAndExpand" Clicked="tres_Clicked"  BackgroundColor="LightSkyBlue" />
+                <Button Text="+" HorizontalOptions="FillAndExpand" Clicked="suma_Clicked" BackgroundColor="LightSalmon" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Button Text="0" HorizontalOptions="FillAndExpand" Clicked="cero_Clicked" BackgroundColor="LightSkyBlue"/>
+                <Button Text="=" HorizontalOptions="FillAndExpand" Clicked="igual_Clicked" BackgroundColor="LightSalmon"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="/" HorizontalOptions="FillAndExpand" Clicked="div_Clicked" BackgroundColor="LightSalmon"/>
+                <Button Text="." HorizontalOptions="FillAndExpand" Clicked="punto_Clicked" BackgroundColor="LightSalmon"/>
+                <Button Text="Raiz" HorizontalOptions="FillAndExpand" Clicked="sqrt_Clicked" BackgroundColor="LightSkyBlue"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
